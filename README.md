@@ -60,7 +60,7 @@ This is a real-time dashboard project.
 ![Admin Panel](assets/AdminPanel.png)
 
 ### Dashboard UI
-![Dashboard UI Screenshot](assets/Dashboard.png)
+![Dashboard UI Screenshot](dashboard/assets/Dashboard.png)
 
 
 
