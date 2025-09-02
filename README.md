@@ -2,6 +2,11 @@
 
 A full-stack project developed during my internship at **ARIES**.  
 This project provides a secure **login system** with role-based access, an **admin panel** for user management, and a **real-time telescope data dashboard**.
+---
+
+## 🚀 Live Demo
+Check it out here: [Real-Time Dashboard on Render](https://real-time-dashboard-frontend.onrender.com)
+
 
 ---
 
