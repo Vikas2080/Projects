@@ -51,13 +51,13 @@ This is a real-time dashboard project.
 ## Screenshots
 
 ### User Login Page
-![User Login Screenshot](assets/UserLogin.png)
+![User Login Screenshot](dashboard/assets/UserLogin.png)
 
 ### Admin Login Page
-![Admin Login Page Screenshot](assets/AdminLogin.png)
+![Admin Login Page Screenshot](dashboard/assets/AdminLogin.png)
 
 ### Data Visualization
-![Admin Panel](assets/AdminPanel.png)
+![Admin Panel](dashboard/assets/AdminPanel.png)
 
 ### Dashboard UI
 ![Dashboard UI Screenshot](dashboard/assets/Dashboard.png)
