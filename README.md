@@ -44,6 +44,26 @@ telescope-project/
 - **Other:** Git, GitHub  
 
 ---
+# Real-Time Dashboard
+
+This is a real-time dashboard project.
+
+## Screenshots
+
+### User Login Page
+![User Login Screenshot](assets/UserLogin.png)
+
+### Admin Login Page
+![Admin Login Page Screenshot](assets/AdminLogin.png)
+
+### Data Visualization
+![Admin Panel](assets/AdminPanel.png)
+
+### Dashboard UI
+![Dashboard UI Screenshot](assets/Dashboard.png)
+
+
+
 
 🚀 Getting Started
 
