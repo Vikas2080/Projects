@@ -1,0 +1,9 @@
+{
+  "rac": 123.45,
+  "dec": -45.67,
+  "tracking": true,
+  "dome_state": "open",
+  "mount_mode": "automatic",
+  "weather": "clear",
+  "timestamp": "2025-08-25T10:30:15Z"
+}
