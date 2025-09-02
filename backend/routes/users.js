@@ -57,7 +57,7 @@ async function writeUsers(users) {
   );
 }
 
-// ✅ GET all users
+//  GET all users
 router.get("/", (req, res) => {
   try {
     const users = readUsers();
@@ -68,7 +68,7 @@ router.get("/", (req, res) => {
   }
 });
 
-// ✅ REGISTER new user
+//  REGISTER new user
 router.post("/register", async (req, res) => {
   try {
     const {
@@ -114,7 +114,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// ✅ USER LOGIN
+//  USER LOGIN
 router.post("/login", (req, res) => {
   try {
     const { username, password } = req.body;
@@ -130,13 +130,13 @@ router.post("/login", (req, res) => {
       return res.status(401).json({ error: "Invalid username or password" });
     }
 
-    // ✅ Admin bypass (skip time/date restrictions)
+    //  Admin bypass (skip time/date restrictions)
     if (user.role?.toLowerCase() === "admin") {
       return res.json({ message: "Login successful (admin)", user });
     }
 
-    // ✅ Check access date
-    // ✅ Check access dates properly
+    // Check access date
+    //  Check access dates properly
     const today = new Date().toISOString().split("T")[0];
 
     console.log("DEBUG user:", user.username, "access_dates:", user.access_dates);
@@ -146,13 +146,13 @@ router.post("/login", (req, res) => {
       return res.status(403).json({ error: "No access dates assigned" });
     }
 
-    // ✅ Block if today is not in allowed dates
+    // Block if today is not in allowed dates
     if (!user.access_dates.includes(today)) {
       return res.status(403).json({ error: `Access not allowed today (${today})` });
     }
 
 
-    // ✅ Check access time
+    //  Check access time
     const now = new Date();
     if (user.accessstart && user.accessend) {
       const [startH, startM] = user.accessstart.split(":").map(Number);
@@ -176,7 +176,7 @@ router.post("/login", (req, res) => {
   }
 });
 
-// ✅ ADMIN LOGIN (ignores time/date restrictions but checks role)
+//  ADMIN LOGIN (ignores time/date restrictions but checks role)
 router.post("/admin-login", (req, res) => {
   try {
     const { username, password } = req.body;
@@ -202,7 +202,7 @@ router.post("/admin-login", (req, res) => {
   }
 });
 
-// ✅ UPDATE user
+//  UPDATE user
 router.put("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -226,7 +226,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// ✅ DELETE user
+//  DELETE user
 router.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -236,7 +236,7 @@ router.delete("/:id", async (req, res) => {
 
     await writeUsers(users);
 
-    // ✅ Re-read to confirm
+    //  Re-read to confirm
     const updatedUsers = readUsers();
     res.json({ success: true, users: updatedUsers });
   } catch (err) {
