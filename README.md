@@ -61,7 +61,7 @@ This is a real-time dashboard project.
 ### Admin Login Page
 ![Admin Login Page Screenshot](dashboard/assets/AdminLogin.png)
 
-### Data Visualization
+### Admin Panel For Admin Tasks
 ![Admin Panel](dashboard/assets/AdminPanel.png)
 
 ### Dashboard UI
