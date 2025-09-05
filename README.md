@@ -1,5 +1,6 @@
 # 🔭 Real-Time-Dashboard Project For 3.6m Devasthal Optical Telescope [Largest Optical Telescope In Asia] 
-![Alt Text](https://www.aries.res.in/dot/DOT_logo3_crop.png)
+
+<img src="https://www.aries.res.in/dot/DOT_logo3_crop.png" alt="Screenshot" width="400"/>
 
 
 A full-stack project developed during my internship at **ARIES**.  
